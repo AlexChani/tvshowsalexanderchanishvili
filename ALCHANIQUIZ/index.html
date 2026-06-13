@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Series</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/Icon.svg" alt="icon">
+        <ul class="nav">
+            <li><a href=""><img src="./assets/mainNav.svg" alt="main"></a></li>
+            <li><a href=""><img src="./assets/moviesNav.svg" alt="movies"></a></li>
+            <li><a href="./index.html"><img src="./assets/tvNavSelected.svg" alt="tv shows"></a></li>
+            <li><a href="./bookmarks.html"><img src="./assets/bookmarkNav.svg" alt="bookmarks"></a></li>
+        </ul>
+        <img src="./assets/pfp.svg" alt="profile picture">
+    </header>
+    <main>
+        <div class="search">
+            <form action="" id="searchForm">
+                <button type="submit" id="searchButton"><img src="./assets/search.svg" alt="search"></button>
+                <input type="text" placeholder="Search for Bookmarked shows" id="searchInput">
+            </form>
+        </div>
+        <h1>TV Series</h1>
+        <template id="showTemplate">
+            <div id="show">
+                <button id="bookmark"><img src="" alt="bookmark" id="bookmarkIMG"></button>
+                <img src="" alt="show image" id="showImage">
+                <div class="info">
+                    <p id="year"></p>
+                    <img src="./assets/separator.svg" alt="separator">
+                    <div class="categoryGroup">
+                        <img src="./assets/categoryTV.svg" alt="category">
+                        <p id="category">TV Series</p>
+                    </div>
+                    <img src="./assets/separator.svg" alt="separator">
+                    <p id="ageRating">PG</p>
+                </div>
+                <p id="title">Title</p>
+            </div>
+        </template>
+        <div class="shows">
+
+        </div>
+    </main>
+</body>
+</html>

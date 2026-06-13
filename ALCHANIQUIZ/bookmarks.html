@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./assets/Icon.svg" alt="icon">
+        <ul class="nav">
+            <li><a href=""><img src="./assets/mainNav.svg" alt="main"></a></li>
+            <li><a href=""><img src="./assets/moviesNav.svg" alt="movies"></a></li>
+            <li><a href="./index.html"><img src="./assets/tvNav.svg" alt="tv shows"></a></li>
+            <li><a href=""><img src="./assets/bookmarkNavSelected.svg" alt="bookmarks"></a></li>
+        </ul>
+        <img src="./assets/pfp.svg" alt="profile picture">
+    </header>
+    <main>
+        <div class="search">
+            <form action="" id="searchForm">
+                <button type="submit" id="searchButton"><img src="./assets/search.svg" alt="search"></button>
+                <input type="text" placeholder="Search for TV series" id="searchInput">
+            </form>
+        </div>
+        <h1>Bookmarked Movies</h1>
+        <template id="showTemplate">
+            <div id="show">
+                <button id="bookmark"><img src="" alt="bookmark" id="bookmarkIMG"></button>
+                <img src="" alt="show image" id="showImage">
+                <div class="info">
+                    <p id="year"></p>
+                    <img src="./assets/separator.svg" alt="separator">
+                    <div class="categoryGroup">
+                        <img src="./assets/categoryTV.svg" alt="category">
+                        <p id="category">TV Series</p>
+                    </div>
+                    <img src="./assets/separator.svg" alt="separator">
+                    <p id="ageRating">PG</p>
+                </div>
+                <p id="title">Title</p>
+            </div>
+        </template>
+        <div class="bookmarkedShows">
+            
+        </div>
+    </main>
+</body>
+</html>
